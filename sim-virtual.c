@@ -7,7 +7,7 @@
 
 typedef struct {
     unsigned int addr;   
-    char rw;             /* 'R' ou 'W' */
+    char rw;             
     unsigned int page;   
 } Access;
 
@@ -19,7 +19,6 @@ typedef struct {
     unsigned long last_access;  
 } Frame;
 
-/* Lê o arquivo .log inteiro e guarda todos os acessos em memória */
 int read_log(const char *filename, Access **accesses_out,
              size_t *count_out, int s_bits) {
     FILE *f = fopen(filename, "r");
