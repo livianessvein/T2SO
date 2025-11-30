@@ -1,3 +1,6 @@
+// 2220373   Giovana Nogueira
+// 2211667   Livian Essvein
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
